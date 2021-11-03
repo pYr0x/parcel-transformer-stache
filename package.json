@@ -1,0 +1,40 @@
+{
+  "name": "parcel-transformer-stache",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "main": "dist/StacheTransformer.js",
+  "module": "dist/StacheTransformer.es.js",
+  "engines": {
+    "node": ">= 12.0.0",
+    "parcel": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "tsc -p . -w --incremental",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "@parcel/diagnostic": "^2.0.0",
+    "@parcel/plugin": "^2.0.0",
+    "@parcel/source-map": "^2.0.0",
+    "@parcel/utils": "^2.0.0",
+    "can-stache-ast": "^1.1.0",
+    "consolidate": "^0.16.0",
+    "nullthrows": "^1.1.1",
+    "semver": "^5.4.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^16.11.0",
+    "rollup": "^2.58.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "can-stache": "^5.1.1",
+    "can-stache-bindings": "^5.0.5",
+    "can-view-import": "^5.0.1",
+    "can-view-scope": "^4.13.6"
+  }
+}
