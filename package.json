@@ -2,17 +2,28 @@
   "name": "parcel-transformer-stache",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Julian Kern",
   "license": "MIT",
   "main": "dist/StacheTransformer.js",
   "module": "dist/StacheTransformer.es.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pYr0x/parcel-transformer-stache.git"
+  },
   "engines": {
     "node": ">= 12.0.0",
     "parcel": "^2.0.0"
   },
   "scripts": {
     "dev": "tsc -p . -w --incremental",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "format": "",
+    "lint": "",
+    "prepare": "npm run build",
+    "prepublishOnly": "",
+    "preversion": "",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@parcel/diagnostic": "^2.0.0",
